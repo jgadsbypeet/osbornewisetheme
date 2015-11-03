@@ -12,9 +12,9 @@
             </div>        
           </div>
             <div class="container">
-                <nav class="blog-nav">
-                    <?php $args = array('title_li'     => __(' '),'exclude' => '7'); ?>                    
-                    <?php wp_list_pages($args); ?>
+                <nav class="blog-nav">                    
+                    <? /* php $args = array('title_li'     => __(' '),'exclude' => '7'); */ ?>                    
+                    <? /* php wp_list_pages($args); */ ?>
         </nav>
                 </div>
 <!--
