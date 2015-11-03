@@ -20,10 +20,10 @@
 <div class="container">
 <?php rewind_posts(); ?>
 <?php while (have_posts()) : the_post(); ?>
-<div class="row">
-    <h1><?php the_title(); ?></h1>
+<div class="row-fluid">
+    <a name="about-us"><h2>About Us</h2></a>
     </div>
-<div class="row">
+<div class="row-fluid">
      <div class="col-md-12">
          <?php the_content(); ?>
     </div>
@@ -36,20 +36,27 @@
 <div class="container">
 <?php rewind_posts(); ?>
 <?php while (have_posts()) : the_post(); ?>
-<div class="row">
-    <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><h2><?php the_title(); ?></h2></a>    </div>
-<div class="row">
-     <div class="col-md-6">
+    <div class="row-fluid">
+    <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><h2><?php the_title(); ?></h2></a>    
+    </div>
+    <hr>
+    
+<div class="row-fluid">
+     <div class="col-md-8">
          <?php the_content(); ?>
     </div>
-    <div class="col-md-2">
-	<?php if ( has_post_thumbnail() ) the_post_thumbnail(array(200,200,true), array('class' => 'img-thumbnail hidden-xs')); else { ?>
-    <img src="<?php bloginfo('template_directory'); ?>/img/TW-social-icon.png" alt="<?php the_title(); ?>" width="200" class="img-thumbnail hidden-xs" /><?php } ?>
+    <div class="col-md-4">
+	<?php if ( has_post_thumbnail() ) the_post_thumbnail(array(400,400,true), array('class' => 'img-thumbnail hidden-xs')); else { ?>
+    <img src="<?php bloginfo('template_directory'); ?>/img/OW_LOGO.png" alt="<?php the_title(); ?>" class="img-thumbnail hidden-xs" style="width: 100%;" /><?php } ?>
+    
     </div>    
 </div>
+    
+    
   <?php endwhile; ?>
 </div>
 <?php } else { ?>
+
   <!-- //everything else -->
 
 <div class="container">
@@ -62,6 +69,11 @@
      <div class="col-md-8">
          <?php the_content(); ?>
     </div>
+    <div class="col-md-4">
+	<?php if ( has_post_thumbnail() ) the_post_thumbnail(array(400,400,true), array('class' => 'img-thumbnail hidden-xs')); else { ?>
+    <img src="<?php bloginfo('template_directory'); ?>/img/OW_LOGO.png" alt="<?php the_title(); ?>" class="img-thumbnail hidden-xs" style="width: 100%;" /><?php } ?>
+    </div>    
+    
 </div>
   <?php endwhile; ?>
 </div><?php } ?>

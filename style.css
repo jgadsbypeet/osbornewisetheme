@@ -31,19 +31,14 @@ body {
   padding-bottom: 20px;
     
 }
+a h2, a:hover h2 {text-decoration: none; color: #000;}
 
-.navbar {min-height: 230px; background: #ffffff; border: none; z-index: 9}
+.navbar {background: #ffffff; border: none; z-index: 9;}
 
 /*
  * Masthead for nav
  */
 
-.masthead-strip {
-    background-color: #1b1a38;    
-}
-
-.masthead-strip h2 {
-}
 
 .blog-masthead {
     position: relative;
@@ -55,10 +50,10 @@ body {
     font-size: 1em;   
     text-align: right;
     color: #fff;
+    font-family: 'LisztyLight', 'Arial', sans-serif;    
 }
 
 footer .blog-masthead {
-    margin-top: 30px;
 }
 
 /* Nav links */
@@ -98,12 +93,19 @@ footer .blog-masthead {
 .blog-nav li {list-style: none;}
 .blog-nav ul {margin: 0; padding:0;}
 .blog-masthead .container {padding: 0;}
-
+.navbar-inverse .navbar-nav>li>a {color: #000; font-family: 'LisztyLight', 'Arial', serif; }
+.navbar-inverse .navbar-nav>li>a:hover {color: #000; font-family: 'LisztyBold', 'Arial', serif; }
+.navbar-inverse .navbar-nav>li>a:active {color: #000; font-family: 'LisztyBold', 'Arial', serif; }
+.navbar-inverse .navbar-nav>li>a:focus {color: #000; font-family: 'LisztyBold', 'Arial', serif; }
+.navbar-toggle {background-color: #000;}
 .jumbotron {background-image: url(img/Osborne-wise-jumbotron.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;padding-top: 220px;padding-bottom: 100px;}
 .jumbotron h1, .jumbotron p {color: #fff; }
 
+.blog-post { display: block;}
+
 @media screen and (min-width: 768px) {
 .jumbotron {margin-top: -20px;z-index: 2;}
+.navbar-nav {margin-left: 180px;}
 }
 
 @media screen and (max-width: 768px) {
@@ -118,4 +120,23 @@ footer .blog-masthead {
 .full-width-grey {
     width: 100%;
     background-color: #efefef;
+}
+
+/* Quotes */
+.quote-box-home {
+    background: #1b1a38;
+    width: 100%;
+    color: #ffffff;
+    padding: 0.5em;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.pushbutton-wide {
+    background-color: #1b1a38;  
+    color: #fff;
+    font-family: 'LisztyBold', 'Arial', serif;    
+    border: none;
+    padding-right: 2em;
+    padding-left: 2em;
 }

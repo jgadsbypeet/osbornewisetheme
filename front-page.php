@@ -3,4 +3,8 @@
 <?php get_template_part('jumbotron'); ?>
 <?php get_template_part('loop'); ?>
 <?php get_template_part('services'); ?>
+<?php get_template_part('our-people'); ?>
+<?php get_template_part('our-services'); ?>
+<?php get_template_part('our-knowledge'); ?>
+<?php get_template_part('contact-us'); ?>
 <?php get_footer(); ?>
