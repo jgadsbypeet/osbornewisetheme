@@ -2,7 +2,7 @@
 <div class="blog-masthead">
             <div class="container">
                 <div class="blog-nav">
-          <p class="blog-nav-item">© 2015 Osborne & Wise, 020 7585 0378, 30 Schubert Road, London SW15 2QS</p>
+          <p class="blog-nav-item">© 2015 Osborne & Wise, +44 (0)207 704 6430</p>
                 </div>
                 </div>
 
