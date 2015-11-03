@@ -1,0 +1,115 @@
+/*
+Theme Name: Osborne and Wise
+Theme URI: http://www.osborneandwise.co.uk/
+Description: Osborne and Wise Estate Agents
+Version: 0.1
+Author: James Gadsby Peet
+Author URI: http://www.jamesgadsby.co.uk/
+*/
+
+@font-face {
+    font-family: LisztyHairline;
+    src: url(fonts/LisztFY-Hair_S.otf);
+}
+
+@font-face {
+    font-family: LisztyLight;
+    src: url(fonts/LisztFY-Light_S.otf);
+}
+
+@font-face {
+    font-family: LisztyBold;
+    src: url(fonts/LisztFY-Bold_S.otf);
+}
+
+
+h1, h2, h3, h4, h5 {font-family: 'LisztyBold', 'Arial', serif;}
+body, p {font-family: 'LisztyLight', 'Arial', sans-serif;}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-bottom: 20px;
+    
+}
+
+.navbar {min-height: 230px; background: #ffffff; border: none; z-index: 9}
+
+/*
+ * Masthead for nav
+ */
+
+.masthead-strip {
+    background-color: #1b1a38;    
+}
+
+.masthead-strip h2 {
+}
+
+.blog-masthead {
+    position: relative;
+    width: 100%;
+    background-color: #1b1a38;    
+}
+
+.blog-masthead h2 {
+    font-size: 1em;   
+    text-align: right;
+    color: #fff;
+}
+
+footer .blog-masthead {
+    margin-top: 30px;
+}
+
+/* Nav links */
+.blog-nav-item, .page_item, .page_item a {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus, page_item:hover, page_item:focus  {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.page_item .active, .blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after,
+.page_item .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+.logo-brand {width: 290px;}
+.blog-nav li {list-style: none;}
+.blog-nav ul {margin: 0; padding:0;}
+.blog-masthead .container {padding: 0;}
+
+.jumbotron {background-image: url(img/Osborne-wise-jumbotron.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;padding-top: 220px;padding-bottom: 100px;}
+.jumbotron h1, .jumbotron p {color: #fff; }
+
+@media screen and (min-width: 768px) {
+.jumbotron {margin-top: -20px;z-index: 2;}
+}
+
+@media screen and (max-width: 768px) {
+    h1, .col-md-8 {padding-left: 10px;}
+    .jumbotron h1 {padding-left: 0px;}
+}
+
+.alignright {float: right; margin: 10px;}
+alignleft {float: left; margin: 10px;}
