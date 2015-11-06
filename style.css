@@ -99,7 +99,7 @@ footer .blog-masthead {
 .navbar-inverse .navbar-nav>li>a:focus {color: #000; font-family: 'LisztyBold', 'Arial', serif; }
 .navbar-toggle {background-color: #000;}
 .jumbotron {background-image: url(img/Osborne-wise-jumbotron.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;padding-top: 220px;padding-bottom: 100px;}
-.jumbotron h1, .jumbotron p {color: #fff; }
+.jumbotron h1, .jumbotron h2, .jumbotron p {color: #fff; }
 
 .blog-post { display: block;}
 
@@ -139,4 +139,14 @@ footer .blog-masthead {
     border: none;
     padding-right: 2em;
     padding-left: 2em;
+}
+
+/* Testing */
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
 }
